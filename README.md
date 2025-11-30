@@ -53,16 +53,19 @@ The database consists of four main tables:
 
 ### Add Manufacturer Column
 ```sql
- ALTER TABLE Medicines
- ADD COLUMN manufacturer VARCHAR(100);
+ALTER TABLE Medicines
+ADD COLUMN manufacturer VARCHAR(100);
 
-## Update Prices by 10%
+```
+Update Prices by 10%
+```
 SET SQL_SAFE_UPDATES = 0;
 UPDATE Medicines
 SET unit_price = unit_price * 1.10;
 SET SQL_SAFE_UPDATES = 1;
-
-## Top 3 Best-Selling Medicines
+```
+Top 3 Best-Selling Medicines
+```
 SELECT
   m.name AS medicine_name,
   m.type,
@@ -72,7 +75,16 @@ JOIN Medicines m ON s.medicine_id = m.medicine_id
 GROUP BY m.medicine_id, m.name, m.type
 ORDER BY total_quantity_sold DESC
 LIMIT 3;
+```
+📄 Files Included
+SQL Placement Readiness Assignment.pdf – Full assignment document (originally created in MySQL, exported via Word → PDF)
+✅ All queries were tested and executed successfully in MySQL.
 
- ---
+🙌 Author
+ ~ Sonu Kumar
+ ~ Student | Data Analyst Learner
+ ~ Affiliated with Career247
 
-      
+
+
+
