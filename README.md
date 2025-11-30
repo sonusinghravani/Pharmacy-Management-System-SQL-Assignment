@@ -81,8 +81,11 @@ SQL Placement Readiness Assignment.pdf – Full assignment document (originally 
 ✅ All queries were tested and executed successfully in MySQL.
 
 🙌 Author
+
  ~ Sonu Kumar
+ 
  ~ Student | Data Analyst Learner
+ 
  ~ Affiliated with Career247
 
 
